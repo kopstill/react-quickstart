@@ -1,20 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function Button() {
+  const [count, setCount] = useState(0);
+
   function handleClick() {
-    alert("Clicked!");
+    setCount(count + 1);
   }
 
   return (
     <React.Fragment>
       <div>
-        <button onClick={handleClick}>I'm a button</button>
+        <button onClick={handleClick}>Click {count} times</button>
       </div>
       <div>
-        <button onClick={handleClick}>I'm a button</button>
+        <button onClick={handleClick}>Click {count} times</button>
       </div>
       <div>
-        <button onClick={handleClick}>I'm a button</button>
+        <button onClick={handleClick}>Click {count} times</button>
       </div>
     </React.Fragment>
   );

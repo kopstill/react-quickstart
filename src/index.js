@@ -6,7 +6,8 @@ import { createRoot } from "react-dom/client";
 // import { Profile } from "./describing-the-ui/importing-and-exporting-components/Profile.js";
 // import TodoList from "./describing-the-ui/writing-markup-with-jsx/TodoList.js";
 // import Bio from "./describing-the-ui/writing-markup-with-jsx/Bio.js";
-import Avatar from "./describing-the-ui/javascript-in-jsx-with-curly-braces/Avatar";
+// import Avatar from "./describing-the-ui/javascript-in-jsx-with-curly-braces/Avatar";
+import App from "./describing-the-ui/passing-props-to-a-component/App";
 
 const root = createRoot(document.getElementById("root"));
 // root.render(<QuickStart />);
@@ -24,5 +25,6 @@ root.render(
   //   <TodoList />
   //   <Bio />
   // </div>
-  <Avatar></Avatar>
+  // <Avatar></Avatar>
+  <App />
 );
